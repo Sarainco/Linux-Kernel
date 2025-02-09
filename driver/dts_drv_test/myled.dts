@@ -1,0 +1,7 @@
+myled: myled_for_test {
+	compatible = "100ask,led";//带有compatible的才会被编译成platform_device
+	pin = "gpio5_3";
+};
+
+
+dtc -I dtb -O dts 100ask_imx6ull-14x14.dtb > 1.dts
